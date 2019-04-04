@@ -1,5 +1,12 @@
-# yiimp
-Install script for yiimp on Ubuntu 16.04
+# yiimp-ytn
+
+Yiimp fork with Yespower and YespowerR16 - https://github.com/bubasik/yiimp-yespowerr16-ytn/
+
+How to install the yiimp pool on the ubuntu 16.04 server and configure yenten coin - http://www.bubasik.com/how-to-install-the-yiimp-pool-on-the-ubuntu-16-04-server-and-configure-yenten-coin-stratum-yescryptr16/
+
+**Recommended hosting VDS (it was tested) - [https://sprintbox.ru](https://sprintbox.ru/promo/SPBP20011655.html "https://sprintbox.ru")**
+
+Install script for yiimp-ytn (witch yespowerR16 for Yenten Coin) on Ubuntu 16.04
 This script will install yimmp on your Ubuntu 16.04 system. 
 
 Before running this script make sure you are on a fresh server and running as a user. Do not run this script under root!
