@@ -1,8 +1,8 @@
 #!/bin/bash
 ################################################################################
-# Author:   crombiecrunch
+# Author:   crombiecrunch, bubasik, yenten
 # 
-# Web:      www.thecryptopool.com
+# Web:      www.thecryptopool.com, http://yenten-pool.info/
 #
 # Program:
 #   Install yiimp on Ubuntu 16.04 running Nginx, MariaDB, and php7.x
