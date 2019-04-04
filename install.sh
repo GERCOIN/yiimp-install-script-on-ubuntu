@@ -493,7 +493,7 @@ define('"'"'EXCH_YOBIT_SECRET'"'"', '"'"''"'"');
     output "Peforming the SQL import"
     output ""
     cd ~
-    cd yiimp/sql
+    cd yiimp-yespowerr16-ytn/sql
     # import sql dump
     sudo zcat 2016-04-03-yaamp.sql.gz | sudo mysql --defaults-group-suffix=host1
     # oh the humanity!
