@@ -177,28 +177,28 @@ default         0;
     blckntifypass=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
     cd ~
     git clone https://github.com/bubasik/yiimp-yespowerr16-ytn.git
-    cd $HOME/yiimp/blocknotify
+    cd $HOME/yiimp-yespowerr16-ytn/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
-    cd $HOME/yiimp/stratum/iniparser
+    cd $HOME/yiimp-yespowerr16-ytn/stratum/iniparser
     sudo make
-    cd $HOME/yiimp/stratum
+    cd $HOME/yiimp-yespowerr16-ytn/stratum
     if [[ ("$BTC" == "y" || "$BTC" == "Y") ]]; then
-    sudo sed -i 's/CFLAGS += -DNO_EXCHANGE/#CFLAGS += -DNO_EXCHANGE/' $HOME/yiimp/stratum/Makefile
+    sudo sed -i 's/CFLAGS += -DNO_EXCHANGE/#CFLAGS += -DNO_EXCHANGE/' $HOME/yiimp-yespowerr16-ytn/stratum/Makefile
     sudo make
     fi
     sudo make
-    cd $HOME/yiimp
-    sudo sed -i 's/AdminRights/'$admin_panel'/' $HOME/yiimp/web/yaamp/modules/site/SiteController.php
-    sudo cp -r $HOME/yiimp/web /var/
+    cd $HOME/yiimp-yespowerr16-ytn
+    sudo sed -i 's/AdminRights/'$admin_panel'/' $HOME/yiimp-yespowerr16-ytn/web/yaamp/modules/site/SiteController.php
+    sudo cp -r $HOME/yiimp-yespowerr16-ytn/web /var/
     sudo mkdir -p /var/stratum
-    cd $HOME/yiimp/stratum
+    cd $HOME/yiimp-yespowerr16-ytn/stratum
     sudo cp -a config.sample/. /var/stratum/config
 sudo cp -r stratum /var/stratum
 sudo cp -r run.sh /var/stratum
-cd $HOME/yiimp
-sudo cp -a $HOME/yiimp/bin/. /bin/
-sudo cp -r $HOME/yiimp/blocknotify/blocknotify /var/stratum
+cd $HOME/yiimp-yespowerr16-ytn
+sudo cp -a $HOME/yiimp-yespowerr16-ytn/bin/. /bin/
+sudo cp -r $HOME/yiimp-yespowerr16-ytn/blocknotify/blocknotify /var/stratum
 sudo mkdir -p /etc/yiimp
 sudo mkdir -p /$HOME/backup/
 #fixing yiimp
