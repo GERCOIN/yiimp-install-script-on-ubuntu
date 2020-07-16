@@ -176,7 +176,7 @@ default         0;
     #Generating Random Password for stratum
     blckntifypass=`cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
     cd ~
-    git clone https://github.com/bubasik/yiimp-yespowerr16-ytn.git
+    git clone https://github.com/GERCOIN/yiimp-yespowerr16-ytn.git
     cd $HOME/yiimp-yespowerr16-ytn/blocknotify
     sudo sed -i 's/tu8tu5/'$blckntifypass'/' blocknotify.cpp
     sudo make
